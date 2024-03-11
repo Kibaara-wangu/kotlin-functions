@@ -21,6 +21,7 @@ fun calculateAverage(x:Int,y:Int):Int{
     var number=x+y
     var average=number/2
     return average
+
 }
 
 
