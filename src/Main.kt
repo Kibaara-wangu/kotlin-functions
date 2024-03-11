@@ -1,37 +1,26 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
-fun main() {
-    var myName=findLength("journalism")
-    println(myName)
+fun main(){
+  var isNumber=isPrime(24)
+    println(isNumber)
 
-    println(average(23,14))
+  var isAverage=calculateAverage(34,23)
+    println(isAverage)
 
-    var names=capitalizeEven("jane")
-    println(names)
+var x = isPrime(24)
+    println(x)
+}
+fun isPrime(x:Int):Boolean{
+    if (x<=1)
+        return false
+    else
+        return true
 
 
 }
-
-//    Write a function named findLength that takes a String parameter and returns its length.
-//    However, make the return type nullable, indicating that it may return null if the input String is null.
-fun findLength(x:String):Int{
-    var myWord= x.length
-    return myWord
+fun calculateAverage(x:Int,y:Int):Int{
+    var number=x+y
+    var average=number/2
+    return average
 }
-//Write a function named average that takes a variable number of integers as
-// itits parameters (varargs) and returns the average of those numbers.
 
-fun average(x:Int,y:Int):Int{
-    var name=x + y
-    var b=name/2
-    return b
-}
-//Create a Kotlin extension function named capitalizeEven for the String class. This function should capitalize every
-// second character in the string. For example, if the input is "kotlin", the output should be "kOtLiN".
-
-fun  capitalizeEven(name:String){
-    var myName= name.uppercase()
-    println(myName)
-}
 
