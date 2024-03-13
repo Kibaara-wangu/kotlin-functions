@@ -60,12 +60,6 @@ fun year(x:Int):Boolean{
         return false
     }
 }
-//Grade Calculation: Write a Kotlin function that takes a student's score as a parameter and returns the corresponding grade based on the following criteria:
-//90 or above: "A"
-//80-89: "B"
-//70-79: "C"
-//60-69: "D"
-//Below 60: "F" Print the grade.
 
 
 
