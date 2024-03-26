@@ -13,6 +13,17 @@ fun main(){
   var maxNumber = findMaxNumber(numbers)
   println("This is the maximum number : $maxNumber")
 
+    var add = numbers(7,4)
+    println(add)
+
+    var sum = addition(2,3,4,5)
+    println(sum)
+
+    var myself=feeling("I am Jane and i like playing VolleyBall")
+    println(myself)
+
+    statement("Ada") 
+
 
 
 
@@ -61,6 +72,24 @@ fun year(x:Int):Boolean{
     }
 }
 
+//Create and invoke a function that takes in a name and prints out “Hello ${name}” e.g given “Ada” it will print out “Hello Ada”
+fun statement(x:String){
+    var name = "hello ${x}"
+    println(name)
+}
 
+//Create and invoke a function that given 2 numbers returns the remainder of their division
+fun numbers(a:Int,b:Int): Int{
+    return a % b
+}
+//Create and invoke  function that returns the sum of any given 4 numbers
+fun addition(a:Int,b:Int,c:Int,d:Int):Int{
+    return a + b + c + d
+}
+
+//Create and invoke a function that prints out an interesting fact about yourself
+fun feeling(fact:String){
+    println(fact)
+}
 
 
